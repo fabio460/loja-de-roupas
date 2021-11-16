@@ -33,6 +33,11 @@ function Produtos2(){
           justify-content:center;
           background-color:red;
       }
+      input{
+          background-color:red;
+          border:0;
+          width:100px;
+      }
       @media (max-width:400px) {
         
          .produto h1{
@@ -93,8 +98,8 @@ function Produtos2(){
     return<>
        <div className='container'>
           <div className='search'>
-            <input value={texto} onChange={search} />
-            <button onClick={buscar}>buscar</button>
+            <input value={texto} onChange={search} placeholder='pesquisar'/>
+            <img src='https://thumbs.dreamstime.com/b/%C3%ADcone-do-lupa-achado-da-busca-ou-ilustra%C3%A7%C3%A3o-logotipo-sinal-liso-vetor-isolado-no-fundo-branco-ilustra-o-simples-para-gr-fico-e-153736337.jpg' onClick={buscar} alt=''/>
           </div>
        </div>
        <Produtos>
