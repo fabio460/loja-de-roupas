@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+
+
 import './App.css';
+import Header from './header';
+import Home from './home';
+import {BrowserRouter,Link,Route,Switch} from 'react-router-dom';
+import Feminino from './rotas/feminino';
+import Masculino from './rotas/masculino';
+import PlusSize from './rotas/plus_size';
+import Infantil from './rotas/infantil';
+import CarrinhoDeCompras from './rotas/carrinhoDeCompras';
+import SacolaDeCompras from './rotas/sacolaDeCompras';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="meuApp">
+        
+         <BrowserRouter>
+             <Link to='/'></Link>
+             <Link to ='/feminino'></Link>
+             <Link to='/masculino'></Link>
+             <Link to='/plussize'></Link>
+             <Link to='/infantil'></Link>
+             <Link to ='/carrinhoDeCompras'></Link>
+             <Link to='/sacoladecompras'></Link>
+             <Switch>
+               <Route exact path='/'> <Header /> <Home/></Route>
+               <Route path='/feminino'><Feminino/></Route>
+               <Route path='/masculino'><Masculino/></Route>
+               <Route path='/plussize'><PlusSize/></Route>
+               <Route path='/infantil'><Infantil/></Route>
+               <Route path='/sacoladecompras'><SacolaDeCompras/></Route>
+               <Route path='/carrinhoDeCompras'><CarrinhoDeCompras/></Route>
+             </Switch>
+         </BrowserRouter>
     </div>
   );
 }
-
+//
 export default App;

@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@fabio460 
+fabio460
+/
+E-commerce
+Public
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+E-commerce/src/index.css
+@fabio460
+fabio460 carrinho alterado
+Latest commit 2db0157 yesterday
+ History
+ 1 contributor
+100 lines (89 sloc)  1.48 KB
+   
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +38,115 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width: 80%;
+  margin: auto;
+  
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.search input{
+  width: 60%;
+  height: 30px;
+  font-size: 25px;
+}
+.search button{
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+}
+.search button:hover{
+  background-color: rgb(146, 146, 255);
+}
+.produto{
+  box-shadow: black 1px 1px 4px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+.produto img{
+  height: 270px;
+}
+
+section{
+  display: flex;
+  margin-top: 80px;
+  
+}
+.nome_carrinho{
+  
+  margin: 0;
+}
+
+section img{
+  width: 30%;
+  height: 500px;
+  margin-right: 50px;
+}
+.valor{
+  color: red;
+  font-size: 25px;
+}
+
+.produto_item_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+ }
+ .produto_item_1 img{
+     margin:0;
+     width: 200px;
+     height: 250px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:400px) {
+  .search{
+    background-color: rgb(255, 99, 43);
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .container{
+    width:97%;
+  }
+  .search input{
+    width: inherit;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+   
+  }
+  section img{
+    width: 95%;
+    height: 500px;
+    margin-right: 0px;
+    margin: auto;
+  }
+  .carregando{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: brown;
+  }
 }
