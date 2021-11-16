@@ -10,7 +10,7 @@ function Produto({nome,imagem,item,id}){
        localStorage.setItem('valor',item.valor);
        localStorage.setItem("sexo",item.sexo);
        localStorage.setItem('idade',item.idade);
-       console.log(localStorage.getItem('id'))
+       
        h.push('/carrinhoDeCompras');
     }
 

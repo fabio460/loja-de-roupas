@@ -72,7 +72,7 @@ function CarrinhoDeCompras(){
         return ''
       })
       if(tem){
-           console.log(id)
+           
            api.atualizarCarrinho(id,quant)
            alert('item adicionado ao carrinho de compras')
       }else{
@@ -90,7 +90,7 @@ function CarrinhoDeCompras(){
         }
       }
 
-     // console.log(lista)
+     
       h.push('/sacolaDeCompras')
     }
     const ativo = (e)=>{

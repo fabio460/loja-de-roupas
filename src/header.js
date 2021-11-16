@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import {useHistory} from 'react-router-dom';
 
 import styled from 'styled-components';
+import api from "./api";
 function Header() {
- 
+  
   const Component = styled.div`
   header{
     display:flex;
@@ -76,7 +77,7 @@ function Header() {
     border-radius:7px;
     height:15px;
     width:15px;
-    display:${localStorage.getItem('flex')};
+    display:none;
     justify-content:center;
     align-items:center;
     font-size:10px;
@@ -164,17 +165,24 @@ function Header() {
     localStorage.setItem("sexo","feminino")
     h.push('/infantil')
   }
-  function verificarCarrinho(){
-    if(localStorage.getItem('cont') === 0){
-      document.querySelector('.cont').style='display:none'
-    }else{
-      document.querySelector('.cont').style='display:flex'
-    }
+  //const [icone,setIcone]=useState();
+ var i = 0;
+ async function verificarCarrinho(){
+     const lista =await api.listarCarrinho()
+     
+     lista.map((item)=>{
+        return i = i + 1;
+     })
     
+     if(i === 0){
+       document.querySelector('span').style='display:none'
+     }else{
+      document.querySelector('span').style='display:flex'
+     }
   }
+  verificarCarrinho();
   useEffect(()=>{
-    //localStorage.setItem('flex','none');
-    verificarCarrinho()
+      
   },[])
   return <>
     <Component>

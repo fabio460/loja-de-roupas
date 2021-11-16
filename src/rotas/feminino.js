@@ -138,7 +138,7 @@ function Feminino(){
        listarPorTipo(localStorage.getItem("tipo")) 
     },[])
  
-    console.log(list)
+    
     return<>
         <Produtos>
             <div className='banner'>
