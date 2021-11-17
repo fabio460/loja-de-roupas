@@ -162,6 +162,7 @@ function Feminino(){
                             <li onClick={()=>listarPorTipo("jeans")}>jeans</li>
                             <li onClick={()=>listarPorTipo("vestidos")}>vestido</li>
                             <li onClick={()=>listarPorTipo("shorts")}>shorts</li>
+                            <li onClick={()=>listarPorTipo("blusa")}>blusas</li>
                         </ul>
                     </aside>
                     <div className='produtos_container'>
