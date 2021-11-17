@@ -162,7 +162,7 @@ function Masculino(){
                     </aside>
                     <div className='produtos_container'>
                         {list.map((item)=>{
-                            return <Produto nome={item.nome} imagem={item.imagem1} item={item}/>
+                            return <Produto nome={item.nome} imagem={item.imagem1} item={item} valor={item.valor}/>
                         })}
                     </div>
                 </section>

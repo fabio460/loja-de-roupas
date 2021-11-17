@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router";
 //import styled from 'styled-components';
-function Produto({nome,imagem,item,id}){
+function Produto({nome,imagem,item,valor}){
     const h = useHistory();
     const carrinho = ()=>{
        localStorage.setItem('id',item._id)
@@ -13,13 +13,21 @@ function Produto({nome,imagem,item,id}){
        
        h.push('/carrinhoDeCompras');
     }
-
+    const parcelar = ()=>{
+        var valortratado = valor.replace(',','.');
+        return (parseFloat(valortratado)/6).toFixed(2)
+    }
     return<>
       
             <div onClick={carrinho} className='produto_item_1'>
-                <div>{nome}</div>
-                <img src={imagem} alt=''/>
                 
+                <img src={imagem} alt=''/>
+                <div>{nome}</div>
+
+                <div >
+                  <div className='preço'>R$ {valor}</div>
+                  <div className='parcela'>6x  R${parcelar()} sem juros</div>
+                </div>
             </div>
     
     </>

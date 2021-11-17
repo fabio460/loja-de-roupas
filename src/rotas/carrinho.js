@@ -82,7 +82,7 @@ function Carrinho({nome,imagem,valor,id,excluirItem,tamanho,quantidade}){
                         </div>
                     </div>
                     <div className='right'>
-                       <h3>{valor}</h3>
+                       <h3>R$ {valor}</h3>
                        <div className='excluir' onClick={excluir}>excluir</div>
                     </div>
                 </div>

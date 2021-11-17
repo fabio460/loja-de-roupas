@@ -50,6 +50,11 @@ function SacolaDeCompras(){
           align-items:center;
           width:100%;
        }
+       .parcela{
+         display:flex;
+         
+         margin:10px -20px 20px 15%;
+       }
        .item_total{
           display:flex;
           align-items:center;
@@ -124,8 +129,12 @@ function SacolaDeCompras(){
                         <div className='item_total'>
                           <div>Total</div>
                           <h5> R$ {total} </h5>
+                          
                         </div>
+                        
                      </div>
+
+                     <div className='parcela'>ou 6x de R$ {(total/6).toFixed(2)} sem juros</div>
                      <div className='btn'>
                            <button>fazer pedido</button>
                      </div>

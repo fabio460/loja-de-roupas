@@ -108,7 +108,7 @@ function Produtos2(){
                <div className='produtos_container'>
 
                    {list.map((item)=>{
-                       return <Produto nome={item.nome} imagem={item.imagem1} item={item} id={item._id}/>
+                       return <Produto nome={item.nome} imagem={item.imagem1} item={item} id={item._id} valor={item.valor}/>
                    })}
                </div>
            </div>

@@ -84,9 +84,9 @@ function CarrinhoDeCompras(){
             document.querySelector('.ativo').id,
             quant
           );
-          alert('item adicionado ao carrinho de compras')
+          //alert('item adicionado ao carrinho de compras')
         } catch (error) {
-          alert('por favor insira o tamanho')
+          //alert('por favor insira o tamanho')
         }
       }
 
@@ -101,6 +101,10 @@ function CarrinhoDeCompras(){
        
     }
     
+    const parcelar = (valor)=>{
+      var valortratado = valor.replace(',','.');
+      return (parseFloat(valortratado)/6).toFixed(2)
+  }
     return <>
        <Header/>
        <Container>
@@ -115,6 +119,7 @@ function CarrinhoDeCompras(){
                     <aside>
                         <h1 className='nome_carrinho'>{localStorage.getItem("nome")}</h1>
                         <h1 className='valor'>R$ {localStorage.getItem("valor")}</h1>
+                        <div className='parcela'>ou 6x de R$ {parcelar(localStorage.getItem("valor"))} sem juros</div>
                         <div className='btn_tamanhos'>
                            <div id='36' onClick={ativo} className='tamanhos'>36</div>
                            <div id='38' onClick={ativo} className='tamanhos'>38</div>

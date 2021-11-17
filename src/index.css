@@ -14,9 +14,11 @@
 .search input{
   width: 60%;
   height: 30px;
-  font-size: 25px;
-  border-radius: 50px;
+  font-size: 20px;
   padding: 5px 15px;
+  border: none;
+  outline: none;
+  border-bottom: black solid 1px;
 }
 .search img{
   width: 25px;
@@ -40,6 +42,7 @@
 }
 .produto img{
   height: 270px;
+  
 }
 
 section{
@@ -63,20 +66,26 @@ section img{
 }
 
 .produto_item_1 {
-  box-shadow: black 1px 1px 4px;
-  height: 390px;
+  
+  height: 420px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  
+  justify-content: space-between;
   padding: 5px;
   margin: 10px;
   cursor: pointer;
  }
  .produto_item_1 img{
      margin:0;
-     width: 200px;
-     height: 250px;
+     width: 100%;
+     height: 350px;
+ }
+ .parcela{
+    color: grey;
+ }
+ .preço{
+   font-weight: bold;
  }
 
 

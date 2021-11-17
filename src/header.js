@@ -84,6 +84,18 @@ function Header() {
   }
   .nomeDoSite{
     cursor:pointer;
+    display:flex;
+    align-items:center;
+  }
+  a img{
+    width:40px;
+    margin-right:20px;
+  }
+  .bloco-menu{
+    display:flex;
+    align-items:center;
+    
+    height:50px;
   }
   @media (max-width:400px) {
     header{
@@ -92,6 +104,10 @@ function Header() {
       padding: 0px;
       align-items: flex-start;
       justify-content: flex-start;
+    }
+    span{
+      
+      padding:0px 5px;
     }
     .menu {
       width: 100%;
@@ -129,7 +145,7 @@ function Header() {
       font-size:25px;
     }
     .login,.carrinho{
-      display:none;
+      display:flex;
     }
   }
   ` 
@@ -187,10 +203,17 @@ function Header() {
   return <>
     <Component>
          <header className='container'>
-            <h1 className='nomeDoSite' onClick={()=>h.push('/')}>E-commerce site</h1>   
+           
+
+            <h1 className='nomeDoSite' onClick={()=>h.push('/')}>
+              <a href='https://fabio460.github.io/Portifolio/'>
+                 <img src='https://superherois.vercel.app/static/media/logo.67123f25.png' alt=''/>
+              </a>
+              E-commerce site
+            </h1>   
             
             <div className='bloco-menu'>
-                <div className='menu'>
+                    <div className='menu'>
                         <div className='menu-item'>masculino</div>
                         <div className='menu-body'>
                           <ul>
