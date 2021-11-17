@@ -63,9 +63,14 @@ section img{
 }
 
 .produto_item_1 {
+  box-shadow: black 1px 1px 4px;
+  height: 390px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  padding: 5px;
+  margin: 10px;
   cursor: pointer;
  }
  .produto_item_1 img{
@@ -87,7 +92,7 @@ section img{
 
 @media (max-width:400px) {
   .search{
-    background-color: rgb(255, 99, 43);
+    
     width: 100%;
     margin: 10px 0px;
   }
