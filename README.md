@@ -1,4 +1,4 @@
-link:https://e-commerce-henna.vercel.app/
+https://loja-de-roupas-lovat.vercel.app/
 
 No front-end foi utilizado React e no back-end, Node com MongoDb
 
