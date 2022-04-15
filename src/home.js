@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import styled from 'styled-components';
 import api from './api';
+import Banner from "./bootstrap/banner";
 import Produto from './produto';
 function Produtos2(){
     const [texto,setTexto] = useState();
@@ -102,6 +103,8 @@ function Produtos2(){
             <img src='https://thumbs.dreamstime.com/b/%C3%ADcone-do-lupa-achado-da-busca-ou-ilustra%C3%A7%C3%A3o-logotipo-sinal-liso-vetor-isolado-no-fundo-branco-ilustra-o-simples-para-gr-fico-e-153736337.jpg' onClick={buscar} alt=''/>
           </div>
        </div>
+       <div className="header_botton"><h1>melhor site e-commerce</h1></div>
+       <div className="banner"><Banner/> </div>
        <Produtos>
            <div className='container'>
                

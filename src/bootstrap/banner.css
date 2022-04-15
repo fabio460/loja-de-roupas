@@ -1,0 +1,19 @@
+.carousel-item img{
+    height: 350px;
+}
+.banner{
+    background-color: brown;
+    height: 300px;
+
+}
+.header_botton{
+    text-align: center;
+    background-color: rgb(185, 185, 185);
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_botton h1{
+    color: yellow;
+}
