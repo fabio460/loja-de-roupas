@@ -24,6 +24,7 @@ function Header() {
     padding-top: 30px;
     transition: 0.3s; 
     opacity: 1;
+    height: 260px;
   }
   
   .menu-body{
@@ -212,7 +213,7 @@ function Header() {
               E-commerce site
             </h1>   
             
-            <div className='bloco-menu'>
+            <div className='bloco-menu '>
                     <div className='menu'>
                         <div className='menu-item'>masculino</div>
                         <div className='menu-body'>
@@ -255,7 +256,7 @@ function Header() {
                                     <li id='camisas' onClick={link_plusSize_masculino}>camiseta</li>
                                 </ul>
                           </div>
-                          <div className='pluz-size-feminino'>
+                          <div className='pluz-size-feminino '>
                                 <h5>feminino</h5>
                                 <ul>
                                     <li id='calça' onClick={link_plusSize_feminino}>calças</li>
