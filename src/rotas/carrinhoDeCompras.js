@@ -75,6 +75,8 @@ function CarrinhoDeCompras(){
            
            api.atualizarCarrinho(id,quant)
            alert('item adicionado ao carrinho de compras')
+           window.location.reload()
+           h.push('/sacolaDeCompras')
       }else{
         try {
           api.inserirCarrinho( 
@@ -84,14 +86,15 @@ function CarrinhoDeCompras(){
             document.querySelector('.ativo').id,
             quant
           );
-          //alert('item adicionado ao carrinho de compras')
+          alert('item adicionado ao carrinho de compras')
+          
         } catch (error) {
-          //alert('por favor insira o tamanho')
+          alert('por favor insira o tamanho')
         }
       }
 
-     
-      h.push('/sacolaDeCompras')
+      window.location.reload()
+      //h.push('/sacolaDeCompras')
     }
     const ativo = (e)=>{
        document.querySelectorAll('.tamanhos').forEach((item)=>{

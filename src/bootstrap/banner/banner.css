@@ -1,14 +1,14 @@
 .carousel-item img{
-    height: 350px;
+    height: 310px;
 }
 .banner{
-    height: 300px;
-    margin-bottom:70px ;
+    
+    margin-bottom:0px ;
 }
 .header_botton{
     text-align: center;
     background-color: rgb(237, 99, 99);
-    height: 170px;
+    height: 125px;
     display: flex;
     align-items: center;
     justify-content: center;

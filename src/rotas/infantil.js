@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from "../api";
 import styled from "styled-components";
-import Produto from "../produto";
+import Produto from "../components/produto/produto";
 import {useHistory} from 'react-router-dom';
 
 function Infantil(){

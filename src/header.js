@@ -24,7 +24,8 @@ function Header() {
     padding-top: 30px;
     transition: 0.3s; 
     opacity: 1;
-    height: 260px;
+    height: 220px;
+    position:absolute;
   }
   
   .menu-body{

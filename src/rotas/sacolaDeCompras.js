@@ -3,6 +3,7 @@ import api from "../api";
 import Carrinho from './carrinho';
 import styled from 'styled-components';
 import Header from '../header'
+import BotaoFinalizarPedido from "../components/BotaoFinalizarPedido/BotaoFinalizarPedido";
 function SacolaDeCompras(){
     const [list,setList]= useState([]);
     async function carregarApi(){
@@ -28,21 +29,16 @@ function SacolaDeCompras(){
           margin:30px;
        }
        .lista{
-          width:100%;       }
-       button{
-          width:70%;
-          height:35px;
-          background-color:orangered;
-          color:white;
-          border-radius:5px;
-          cursor:pointer;
-       } 
-       button:hover{
-          background-color:rgb(205, 19, 43);
-       }
+          width:100%;       
+         }
+     
        .btn{
           display:flex;
           justify-content:center;
+       }
+       .btn_finalizarPedido{
+         display:flex;
+         justify-content:center;
        }
        .total{
           display:flex;
@@ -111,6 +107,7 @@ function SacolaDeCompras(){
        
     },[])
 
+ 
    
     return<>
        <Header/>
@@ -135,8 +132,8 @@ function SacolaDeCompras(){
                      </div>
 
                      <div className='parcela'>ou 6x de R$ {(total/6).toFixed(2)} sem juros</div>
-                     <div className='btn'>
-                           <button>fazer pedido</button>
+                     <div className='btn_finalizarPedido'>
+                           <BotaoFinalizarPedido/>
                      </div>
                </aside>
 

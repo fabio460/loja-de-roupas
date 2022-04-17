@@ -2,7 +2,7 @@
 
 import './App.css';
 import Header from './header';
-import Home from './home';
+import Home from './components/home/home';
 import {BrowserRouter,Link,Route,Switch} from 'react-router-dom';
 import Feminino from './rotas/feminino';
 import Masculino from './rotas/masculino';

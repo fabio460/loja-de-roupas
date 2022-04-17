@@ -1,8 +1,8 @@
 import React, { useState,useEffect } from "react";
 import styled from 'styled-components';
-import api from './api';
-import Banner from "./bootstrap/banner";
-import Produto from './produto';
+import api from '../../api';
+import Banner from "../../bootstrap/banner/banner";
+import Produto from '../produto/produto';
 function Produtos2(){
     const [texto,setTexto] = useState();
     const [list,setList]=useState([])

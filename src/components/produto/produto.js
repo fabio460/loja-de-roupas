@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router";
+import './produto.css';
 //import styled from 'styled-components';
 function Produto({nome,imagem,item,valor}){
     const h = useHistory();
@@ -21,7 +22,7 @@ function Produto({nome,imagem,item,valor}){
       
             <div onClick={carrinho} className='produto_item_1'>
                 
-                <img src={imagem} alt=''/>
+                <img className="imagem_produto" src={imagem} alt=''/>
                 <div>{nome}</div>
 
                 <div >
